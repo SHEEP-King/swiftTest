@@ -13,6 +13,7 @@
 		5259B4262462BE2600DAE3F8 /* java.png in Resources */ = {isa = PBXBuildFile; fileRef = 5259B4232462BE2100DAE3F8 /* java.png */; };
 		5259B4272462BE2600DAE3F8 /* oc.png in Resources */ = {isa = PBXBuildFile; fileRef = 5259B4242462BE2400DAE3F8 /* oc.png */; };
 		5259B4282462BE2600DAE3F8 /* swift.png in Resources */ = {isa = PBXBuildFile; fileRef = 5259B4252462BE2600DAE3F8 /* swift.png */; };
+		5259B42A2462F89600DAE3F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5259B4292462F89600DAE3F8 /* README.md */; };
 		52915821245FFCCC00568329 /* GoodsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52915820245FFCCC00568329 /* GoodsCell.swift */; };
 		529158232460183F00568329 /* Good.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529158222460183F00568329 /* Good.swift */; };
 		52DA5FF4233C5B5000DA9D15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5FF3233C5B5000DA9D15 /* AppDelegate.swift */; };
@@ -35,6 +36,7 @@
 		5259B4232462BE2100DAE3F8 /* java.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = java.png; sourceTree = "<group>"; };
 		5259B4242462BE2400DAE3F8 /* oc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oc.png; sourceTree = "<group>"; };
 		5259B4252462BE2600DAE3F8 /* swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift.png; sourceTree = "<group>"; };
+		5259B4292462F89600DAE3F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		52915820245FFCCC00568329 /* GoodsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsCell.swift; sourceTree = "<group>"; };
 		529158222460183F00568329 /* Good.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Good.swift; sourceTree = "<group>"; };
 		52DA5FF0233C5B5000DA9D15 /* sheepSwift30.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sheepSwift30.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 		52DA5FF2233C5B5000DA9D15 /* sheepSwift30 */ = {
 			isa = PBXGroup;
 			children = (
+				5259B4292462F89600DAE3F8 /* README.md */,
 				52DA6017233CC86500DA9D15 /* Model */,
 				52DA6013233CC63B00DA9D15 /* classes */,
 				52DA6012233CC60C00DA9D15 /* Base */,
@@ -218,6 +221,7 @@
 				52DA5FFD233C5B5200DA9D15 /* Assets.xcassets in Resources */,
 				5259B4282462BE2600DAE3F8 /* swift.png in Resources */,
 				5259B41C2461929500DAE3F8 /* GoodsCell.xib in Resources */,
+				5259B42A2462F89600DAE3F8 /* README.md in Resources */,
 				52DA5FFB233C5B5000DA9D15 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
