@@ -10,10 +10,10 @@
 		5259B41C2461929500DAE3F8 /* GoodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5259B41B2461929500DAE3F8 /* GoodsCell.xib */; };
 		5259B41E24628F3300DAE3F8 /* BaseNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259B41D24628F3300DAE3F8 /* BaseNaviController.swift */; };
 		5259B42124628FD200DAE3F8 /* SPNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259B42024628FD200DAE3F8 /* SPNaviController.swift */; };
-		5259B4262462BE2600DAE3F8 /* java.png in Resources */ = {isa = PBXBuildFile; fileRef = 5259B4232462BE2100DAE3F8 /* java.png */; };
-		5259B4272462BE2600DAE3F8 /* oc.png in Resources */ = {isa = PBXBuildFile; fileRef = 5259B4242462BE2400DAE3F8 /* oc.png */; };
-		5259B4282462BE2600DAE3F8 /* swift.png in Resources */ = {isa = PBXBuildFile; fileRef = 5259B4252462BE2600DAE3F8 /* swift.png */; };
 		5259B42A2462F89600DAE3F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5259B4292462F89600DAE3F8 /* README.md */; };
+		5259B42D2462F94500DAE3F8 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259B42C2462F94500DAE3F8 /* TimerController.swift */; };
+		5259B4312463927600DAE3F8 /* PreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259B4302463927600DAE3F8 /* PreViewController.swift */; };
+		5259B433246574D400DAE3F8 /* AuthIPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259B432246574D400DAE3F8 /* AuthIPhone.swift */; };
 		52915821245FFCCC00568329 /* GoodsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52915820245FFCCC00568329 /* GoodsCell.swift */; };
 		529158232460183F00568329 /* Good.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529158222460183F00568329 /* Good.swift */; };
 		52DA5FF4233C5B5000DA9D15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5FF3233C5B5000DA9D15 /* AppDelegate.swift */; };
@@ -33,10 +33,10 @@
 		5259B41B2461929500DAE3F8 /* GoodsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodsCell.xib; sourceTree = "<group>"; };
 		5259B41D24628F3300DAE3F8 /* BaseNaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNaviController.swift; sourceTree = "<group>"; };
 		5259B42024628FD200DAE3F8 /* SPNaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNaviController.swift; sourceTree = "<group>"; };
-		5259B4232462BE2100DAE3F8 /* java.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = java.png; sourceTree = "<group>"; };
-		5259B4242462BE2400DAE3F8 /* oc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oc.png; sourceTree = "<group>"; };
-		5259B4252462BE2600DAE3F8 /* swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift.png; sourceTree = "<group>"; };
 		5259B4292462F89600DAE3F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		5259B42C2462F94500DAE3F8 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
+		5259B4302463927600DAE3F8 /* PreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreViewController.swift; sourceTree = "<group>"; };
+		5259B432246574D400DAE3F8 /* AuthIPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthIPhone.swift; sourceTree = "<group>"; };
 		52915820245FFCCC00568329 /* GoodsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsCell.swift; sourceTree = "<group>"; };
 		529158222460183F00568329 /* Good.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Good.swift; sourceTree = "<group>"; };
 		52DA5FF0233C5B5000DA9D15 /* sheepSwift30.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sheepSwift30.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,14 +73,12 @@
 			path = base;
 			sourceTree = "<group>";
 		};
-		5259B4222462BE0F00DAE3F8 /* imgs */ = {
+		5259B42B2462F90800DAE3F8 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				5259B4232462BE2100DAE3F8 /* java.png */,
-				5259B4242462BE2400DAE3F8 /* oc.png */,
-				5259B4252462BE2600DAE3F8 /* swift.png */,
+				5259B42C2462F94500DAE3F8 /* TimerController.swift */,
 			);
-			path = imgs;
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		52DA5FE7233C5B5000DA9D15 = {
@@ -124,6 +122,7 @@
 				52DA600E233CB6B100DA9D15 /* BaseTabController.swift */,
 				52DA6010233CC2C100DA9D15 /* BaseViewController.swift */,
 				5259B41D24628F3300DAE3F8 /* BaseNaviController.swift */,
+				5259B432246574D400DAE3F8 /* AuthIPhone.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -131,6 +130,7 @@
 		52DA6013233CC63B00DA9D15 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				5259B42B2462F90800DAE3F8 /* Timer */,
 				5259B41F24628F8100DAE3F8 /* base */,
 				52DA6014233CC68600DA9D15 /* GoodsCollection */,
 			);
@@ -140,11 +140,11 @@
 		52DA6014233CC68600DA9D15 /* GoodsCollection */ = {
 			isa = PBXGroup;
 			children = (
-				5259B4222462BE0F00DAE3F8 /* imgs */,
 				52DA6015233CC73F00DA9D15 /* GoodsTable.swift */,
 				52915820245FFCCC00568329 /* GoodsCell.swift */,
 				529158222460183F00568329 /* Good.swift */,
 				5259B41B2461929500DAE3F8 /* GoodsCell.xib */,
+				5259B4302463927600DAE3F8 /* PreViewController.swift */,
 			);
 			path = GoodsCollection;
 			sourceTree = "<group>";
@@ -216,10 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52DA6000233C5B5200DA9D15 /* LaunchScreen.storyboard in Resources */,
-				5259B4272462BE2600DAE3F8 /* oc.png in Resources */,
-				5259B4262462BE2600DAE3F8 /* java.png in Resources */,
 				52DA5FFD233C5B5200DA9D15 /* Assets.xcassets in Resources */,
-				5259B4282462BE2600DAE3F8 /* swift.png in Resources */,
 				5259B41C2461929500DAE3F8 /* GoodsCell.xib in Resources */,
 				5259B42A2462F89600DAE3F8 /* README.md in Resources */,
 				52DA5FFB233C5B5000DA9D15 /* Main.storyboard in Resources */,
@@ -238,10 +235,13 @@
 				5259B42124628FD200DAE3F8 /* SPNaviController.swift in Sources */,
 				52DA600F233CB6B100DA9D15 /* BaseTabController.swift in Sources */,
 				529158232460183F00568329 /* Good.swift in Sources */,
+				5259B433246574D400DAE3F8 /* AuthIPhone.swift in Sources */,
 				52915821245FFCCC00568329 /* GoodsCell.swift in Sources */,
 				52DA5FF8233C5B5000DA9D15 /* ViewController.swift in Sources */,
 				52DA6019233CC87B00DA9D15 /* Functions.swift in Sources */,
+				5259B42D2462F94500DAE3F8 /* TimerController.swift in Sources */,
 				52DA5FF4233C5B5000DA9D15 /* AppDelegate.swift in Sources */,
+				5259B4312463927600DAE3F8 /* PreViewController.swift in Sources */,
 				52DA6011233CC2C100DA9D15 /* BaseViewController.swift in Sources */,
 				52DA600A233C922800DA9D15 /* constants.swift in Sources */,
 				52DA6016233CC73F00DA9D15 /* GoodsTable.swift in Sources */,
@@ -391,7 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S4QT3FM4U2;
 				INFOPLIST_FILE = sheepSwift30/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,7 +400,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -411,7 +411,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S4QT3FM4U2;
 				INFOPLIST_FILE = sheepSwift30/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -419,7 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sheep.www.sheepSwift30;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

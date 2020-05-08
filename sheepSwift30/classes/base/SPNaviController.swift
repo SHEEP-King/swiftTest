@@ -9,10 +9,22 @@ import UIKit
 
 class SPNaviController: BaseNaviController {
 
+    var isBackButtonShow = true
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     
 
+}
+extension SPNaviController : UINavigationControllerDelegate{
+    
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        if !isBackButtonShow {
+            
+        }
+    }
+    
 }

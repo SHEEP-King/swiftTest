@@ -17,7 +17,7 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initDatas()
-        //initView()
+        setupViews()
         
     }
 
@@ -30,6 +30,10 @@ class ViewController: UITableViewController {
           Functions(name: "GoodsAsOldPhones", des: "GoodsAsOldPhones", img: "goods"),
           Functions(name: "GoodsAsOldPhones", des: "GoodsAsOldPhones", img: "goods")
         ]
+    }
+    
+    func setupViews() -> Void {
+        self.title = "Functions"
     }
 
 }
@@ -63,7 +67,7 @@ extension ViewController{
         
         switch indexPath.row {
         case 0:
-            self.present(GoodsCollectionController.init(collectionViewLayout: GoodsLayout()), animated: true, completion: nil)
+            self.navigationController?.show(GoodsCollectionController.init(collectionViewLayout: GoodsLayout()), sender: nil)
         default:
             EZLog(message: "click cell default")
         }

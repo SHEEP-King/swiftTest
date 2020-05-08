@@ -17,8 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let viewController = ViewController()
+        let nav = SPNaviController(rootViewController: viewController)
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = viewController
+        window?.rootViewController = nav
         window?.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()
         return true

@@ -53,9 +53,12 @@ extension GoodsCollectionController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         EZLog(message: "collection clicked item: \(indexPath.item)")
         
-        let cell = collectionView.cellForItem(at: indexPath) as! GoodsCell
+        //let cell = collectionView.cellForItem(at: indexPath) as! GoodsCell
         
-        showMessage(title: "item \(indexPath.item) clicked", content: cell.titleLable.text ?? "no title")
+        //showMessage(title: "item \(indexPath.item) clicked", content: cell.titleLable.text ?? "no title")
+        
+        let preView = PreViewController(good: goods[indexPath.item])
+        self.navigationController?.show(preView, sender: nil)
         
     }
     
