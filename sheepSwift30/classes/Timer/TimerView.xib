@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TimerView" customModule="sheepSwift30" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="155"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="yXQ-p9-KEC">
+                    <rect key="frame" x="10" y="10" width="420" height="101"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="center" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q86-Px-uL0">
+                            <rect key="frame" x="125" y="0.0" width="170.5" height="48"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WbI-4l-g3i" userLabel="hourLabel">
+                                    <rect key="frame" x="0.0" y="0.0" width="49.5" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fer-fR-zPv" userLabel="timeLabel">
+                                    <rect key="frame" x="49.5" y="0.0" width="11" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TQt-Zo-OWA" userLabel="minuteLabel">
+                                    <rect key="frame" x="60.5" y="0.0" width="49.5" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OA4-SS-ohW" userLabel="timeLabel">
+                                    <rect key="frame" x="110" y="0.0" width="11" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UZh-vf-qwf" userLabel="secondLabel">
+                                    <rect key="frame" x="121" y="0.0" width="49.5" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="0k0-nY-hKX">
+                            <rect key="frame" x="133" y="76" width="154" height="25"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20L-w8-q1b" userLabel="startButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="66" height="25"/>
+                                    <state key="normal" title="开始/暂停"/>
+                                    <connections>
+                                        <action selector="startButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="dcT-UM-ZPh"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fZ-s1-xpa" userLabel="resetButton">
+                                    <rect key="frame" x="123" y="0.0" width="31" height="25"/>
+                                    <state key="normal" title="复位"/>
+                                    <connections>
+                                        <action selector="resetButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="0XH-f5-7yS"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="yXQ-p9-KEC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="0RA-xm-L5y"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="yXQ-p9-KEC" secondAttribute="bottom" constant="10" id="Dkt-qD-FGm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yXQ-p9-KEC" secondAttribute="trailing" constant="10" id="MER-iL-Ddu"/>
+                <constraint firstItem="yXQ-p9-KEC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="ikw-NZ-69e"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="hourLabel" destination="WbI-4l-g3i" id="Kde-qL-So6"/>
+                <outlet property="minLabel" destination="TQt-Zo-OWA" id="YdH-8R-Mrx"/>
+                <outlet property="resetButton" destination="1fZ-s1-xpa" id="H30-cp-IVr"/>
+                <outlet property="secLabel" destination="UZh-vf-qwf" id="dvk-SC-3s3"/>
+                <outlet property="startButton" destination="20L-w8-q1b" id="rZ8-Cg-JQ8"/>
+            </connections>
+            <point key="canvasLocation" x="147.82608695652175" y="-266.18303571428572"/>
+        </view>
+    </objects>
+</document>

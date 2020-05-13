@@ -21,12 +21,12 @@ class BaseViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        initView()
+        initViews()
     }
     
-    func initView() -> Void {
-        
-        EZLog(message: "initView")
+    //ViewDidLoad 时初始化 视图
+    func initViews() -> Void {
+        EZLog(message: "initViews")
     }
     
 }

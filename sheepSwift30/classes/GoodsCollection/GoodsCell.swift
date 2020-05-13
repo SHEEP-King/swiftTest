@@ -32,7 +32,7 @@ class GoodsCell: UICollectionViewCell {
     }
     
     
-    public static func reuseCell(view: UICollectionView,indexPath: IndexPath, good: Good) -> GoodsCell {
+    public class func reuseCell(view: UICollectionView,indexPath: IndexPath, good: Good) -> GoodsCell {
         let goodsCell = view.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! GoodsCell
         
         

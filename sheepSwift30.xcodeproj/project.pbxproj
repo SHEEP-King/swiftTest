@@ -14,6 +14,10 @@
 		5259B42D2462F94500DAE3F8 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259B42C2462F94500DAE3F8 /* TimerController.swift */; };
 		5259B4312463927600DAE3F8 /* PreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259B4302463927600DAE3F8 /* PreViewController.swift */; };
 		5259B433246574D400DAE3F8 /* AuthIPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259B432246574D400DAE3F8 /* AuthIPhone.swift */; };
+		5259B4352466378C00DAE3F8 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259B4342466378C00DAE3F8 /* TimerView.swift */; };
+		5259B437246637B100DAE3F8 /* TimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5259B436246637B100DAE3F8 /* TimerView.xib */; };
+		5259B4392466570900DAE3F8 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259B4382466570900DAE3F8 /* BaseUIView.swift */; };
+		5259B43B2466AD5000DAE3F8 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259B43A2466AD5000DAE3F8 /* Util.swift */; };
 		52915821245FFCCC00568329 /* GoodsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52915820245FFCCC00568329 /* GoodsCell.swift */; };
 		529158232460183F00568329 /* Good.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529158222460183F00568329 /* Good.swift */; };
 		52DA5FF4233C5B5000DA9D15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5FF3233C5B5000DA9D15 /* AppDelegate.swift */; };
@@ -37,6 +41,10 @@
 		5259B42C2462F94500DAE3F8 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
 		5259B4302463927600DAE3F8 /* PreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreViewController.swift; sourceTree = "<group>"; };
 		5259B432246574D400DAE3F8 /* AuthIPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthIPhone.swift; sourceTree = "<group>"; };
+		5259B4342466378C00DAE3F8 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		5259B436246637B100DAE3F8 /* TimerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerView.xib; sourceTree = "<group>"; };
+		5259B4382466570900DAE3F8 /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
+		5259B43A2466AD5000DAE3F8 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		52915820245FFCCC00568329 /* GoodsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsCell.swift; sourceTree = "<group>"; };
 		529158222460183F00568329 /* Good.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Good.swift; sourceTree = "<group>"; };
 		52DA5FF0233C5B5000DA9D15 /* sheepSwift30.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sheepSwift30.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				5259B42C2462F94500DAE3F8 /* TimerController.swift */,
+				5259B4342466378C00DAE3F8 /* TimerView.swift */,
+				5259B436246637B100DAE3F8 /* TimerView.xib */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -123,6 +133,8 @@
 				52DA6010233CC2C100DA9D15 /* BaseViewController.swift */,
 				5259B41D24628F3300DAE3F8 /* BaseNaviController.swift */,
 				5259B432246574D400DAE3F8 /* AuthIPhone.swift */,
+				5259B4382466570900DAE3F8 /* BaseUIView.swift */,
+				5259B43A2466AD5000DAE3F8 /* Util.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -219,6 +231,7 @@
 				52DA5FFD233C5B5200DA9D15 /* Assets.xcassets in Resources */,
 				5259B41C2461929500DAE3F8 /* GoodsCell.xib in Resources */,
 				5259B42A2462F89600DAE3F8 /* README.md in Resources */,
+				5259B437246637B100DAE3F8 /* TimerView.xib in Resources */,
 				52DA5FFB233C5B5000DA9D15 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,11 +244,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5259B41E24628F3300DAE3F8 /* BaseNaviController.swift in Sources */,
+				5259B43B2466AD5000DAE3F8 /* Util.swift in Sources */,
+				5259B4392466570900DAE3F8 /* BaseUIView.swift in Sources */,
 				52DA6008233C6C1E00DA9D15 /* AppDelegate-UI.swift in Sources */,
 				5259B42124628FD200DAE3F8 /* SPNaviController.swift in Sources */,
 				52DA600F233CB6B100DA9D15 /* BaseTabController.swift in Sources */,
 				529158232460183F00568329 /* Good.swift in Sources */,
 				5259B433246574D400DAE3F8 /* AuthIPhone.swift in Sources */,
+				5259B4352466378C00DAE3F8 /* TimerView.swift in Sources */,
 				52915821245FFCCC00568329 /* GoodsCell.swift in Sources */,
 				52DA5FF8233C5B5000DA9D15 /* ViewController.swift in Sources */,
 				52DA6019233CC87B00DA9D15 /* Functions.swift in Sources */,

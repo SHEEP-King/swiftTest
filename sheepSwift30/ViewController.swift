@@ -68,6 +68,8 @@ extension ViewController{
         switch indexPath.row {
         case 0:
             self.navigationController?.show(GoodsCollectionController.init(collectionViewLayout: GoodsLayout()), sender: nil)
+        case 1:
+            self.navigationController?.show(TimerController(), sender: nil)
         default:
             EZLog(message: "click cell default")
         }
